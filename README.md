@@ -61,42 +61,25 @@ npm run build
 npm run prod
 ```
 
-### To deploy this project to heroku see steps below:
+### To deploy this project to netlify see steps below:
 
-You will need to create an account in Netlify
-
-```bash
-# Heroku-cli (paste link in browser)
-https://devcenter.heroku.com/articles/heroku-cli
-```
-
-Afer installing heroku-cli run the following commands in terminal
+At first push your project to Github. You will need to create an account in Netlify and link that repository.
 
 ```bash
-# login locally
-heroku login
+# Guide (paste link in browser)
+https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/
 ```
 
-You will be prompted to enter your email and password which is the same the email and password used when you sign up for Heroku
+Before start deploying make sure to add the environment variables in Build and deploy sections of Netlify.
 
 ```bash
-# create your app
-heroku create
-
-# set enviroment vareiables
-heroku config:set mongoURI=YOUR_OWN_MONGO_URI
-heroku config:set secretOrKey=YOUR_OWN_SECRET
+REACT_APP_API_SPACE=YOUR_SPACE
+REACT_APP_API_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
 ```
 
-Try to keep your production DB different from development DB
+Hit the Deploy button after setting up above configuration and you are ready to go.
 
-```bash
-# bundle code for production
-npm run build
-
-# deploy code to heroku
-git push heroku master:master
-```
+##Project Snapshots:
 
 <img src="img/b.png">
 
