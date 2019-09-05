@@ -31,16 +31,15 @@ REACT_APP_API_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
 
 To access your data from contentful, you need to add all your fields and data to the content model. Kindly, refer to the below snapshot of my dashboard.
 
-```
 <img src="img/d.png">
 
-```
+---
 <img src="img/e.png">
 
-```
+---
 <img src="img/f.png">
 
-```
+---
 <img src="img/g.png">
 
 ```
