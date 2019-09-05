@@ -79,7 +79,7 @@ REACT_APP_API_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
 
 Hit the Deploy button after setting up above configuration and you are ready to go.
 
-##Project Snapshots:
+## Project Snapshots
 
 <img src="img/b.png">
 
