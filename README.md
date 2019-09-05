@@ -29,7 +29,7 @@ REACT_APP_API_SPACE=YOUR_SPACE
 REACT_APP_API_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
 ```
 
-To access your data from contentful, you need to add all your fields and data to the content model. Kindly, refer to the below snapshot of my dashboard.
+To access your data from contentful, you need to add all your fields and data to the content model that you need to create at the dashboard. Kindly, refer to the below snapshot of my dashboard.
 
 <img src="img/d.png">
 
