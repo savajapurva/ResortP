@@ -1,68 +1,137 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Beach Resort 
 
-## Available Scripts
+It is a Resort website where user can checkout different types of rooms such as single, double, family and presidential. There is a filter in room page where user can filter rooms by room type, room capacity, price and whether pet is allowed or not.
 
-In the project directory, you can run:
+Live link: <a href="https://my-react-resort.netlify.com/rooms" target="_blank">Click here</a>
 
-### `npm start`
+<img src="client/src/img/homepage.png">
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Quick Start
 
-### `npm test`
+```bash
+# clone repository
+https://github.com/savajapurva/DevsNetwork-MERN.git
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies
+cd DevsNetwork-MERN && npm install
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Enter mongoURI and secret in config->keys_dev.js
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+mongoURI=YOUR_OWN_MONGO_URI
+secretOrKey=YOUR_OWN_SECRET
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the development server:
 
-### `npm run eject`
+```bash
+# the development server runs on port 3000
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To run production build:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# create code bundle
+npm run build
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# run production server
+npm run prod
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### To deploy this project to heroku see steps below:
 
-## Learn More
+You will need to install the [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Heroku-cli (paste link in browser)
+https://devcenter.heroku.com/articles/heroku-cli
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Afer installing heroku-cli run the following commands in terminal
 
-### Code Splitting
+```bash
+# login locally
+heroku login
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+You will be prompted to enter your email and password which is the same the email and password used when you sign up for Heroku
 
-### Analyzing the Bundle Size
+```bash
+# create your app
+heroku create
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+# set enviroment vareiables
+heroku config:set mongoURI=YOUR_OWN_MONGO_URI
+heroku config:set secretOrKey=YOUR_OWN_SECRET
+```
 
-### Making a Progressive Web App
+Try to keep your production DB different from development DB
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```bash
+# bundle code for production
+npm run build
 
-### Advanced Configuration
+# deploy code to heroku
+git push heroku master:master
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+<img src="client/src/img/overallprofile.png">
 
-### Deployment
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+<img src="client/src/img/dashboard.png">
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img src="client/src/img/devlist.png">
+
+---
+
+<img src="client/src/img/posts.png">
+
+---
+
+<img src="client/src/img/form1.png">
+
+---
+
+## Main Technologies
+
+### Client Side
+
+- [x] **[React](https://github.com/facebook/react)**
+- [x] **[Redux](https://github.com/reactjs/redux)**
+- [x] **[Twitter Bootstap 4](https://github.com/twbs/bootstrap/tree/v4-dev)**
+- [x] **[React-Router-DOM](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+
+#### Libraries used in Client-side
+
+- [x] **[axios](https://github.com/axios/axios)**
+- [x] **[classnames](https://github.com/JedWatson/classnames)**
+- [x] **[react-moment](https://github.com/headzoo/react-moment)**
+- [x] **[react-redux](https://github.com/reduxjs/react-redux)**
+- [x] **[redux-thunk](https://github.com/reduxjs/redux-thunk)**
+- [x] **[validator](https://github.com/chriso/validator.js)**
+
+### Server Side
+
+- [x] **[Node.js / Express](https://github.com/expressjs/express)**
+- [x] **[MongoDB](https://github.com/mongodb/mongo)**
+- [x] **[JWT](https://github.com/auth0/node-jsonwebtoken)**
+- [x] **[Passport](http://www.passportjs.org/)**
+- [x] **[Passport-jwt](https://github.com/themikenicholson/passport-jwt)**
+
+#### Libraries used in Server-side
+
+- [x] **[bcryptjs](https://github.com/dcodeIO/bcrypt.js)**
+- [x] **[bluebird](http://bluebirdjs.com/docs/getting-started.html)**
+- [x] **[gravatar](https://github.com/emerleite/node-gravatar)**
+- [x] **[mongoose](http://mongoosejs.com/)**
+- [x] **[jwt-decode](https://github.com/auth0/jwt-decode)**
+- [x] **[moment](https://momentjs.com/)**
+- [x] **[validator](https://github.com/chriso/validator.js)**
