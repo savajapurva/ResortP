@@ -4,7 +4,7 @@ It is a Resort website where user can checkout different types of rooms such as 
 
 Live link: <a href="https://my-react-resort.netlify.com/rooms" target="_blank">Click here</a>
 
-<img src="client/src/img/homepage.png">
+<img src="img/a.png">
 
 ---
 
@@ -80,23 +80,15 @@ npm run build
 git push heroku master:master
 ```
 
-<img src="client/src/img/overallprofile.png">
+<img src="img/b.png">
 
 ---
 
-<img src="client/src/img/dashboard.png">
+<img src="img/bb.png">
 
 ---
 
-<img src="client/src/img/devlist.png">
-
----
-
-<img src="client/src/img/posts.png">
-
----
-
-<img src="client/src/img/form1.png">
+<img src="img/c.png">
 
 ---
 
