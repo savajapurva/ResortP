@@ -4,7 +4,7 @@ It is a Resort website where user can checkout different types of rooms such as 
 
 Live link: <a href="https://my-react-resort.netlify.com/rooms" target="_blank">Click here</a>
 
-<img src="img/a.png">
+<img src="img/aa.png">
 
 ---
 
@@ -12,18 +12,37 @@ Live link: <a href="https://my-react-resort.netlify.com/rooms" target="_blank">C
 
 ```bash
 # clone repository
-https://github.com/savajapurva/DevsNetwork-MERN.git
+https://github.com/savajapurva/ResortP.git
 
 # Install dependencies
-cd DevsNetwork-MERN && npm install
+cd ResortP && npm install
 
 ```
+To query and get content using the APIs, client applications need to authenticate with both the Space ID and an access token. So, create account in contentful and then create an App. 
 
-Enter mongoURI and secret in config->keys_dev.js
+API keys of your app will be in setting -> API keys section
+
+Now, create an .env.development file in yor project and add your keys.
 
 ```
-mongoURI=YOUR_OWN_MONGO_URI
-secretOrKey=YOUR_OWN_SECRET
+REACT_APP_API_SPACE=YOUR_SPACE
+REACT_APP_API_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
+```
+
+To access your data from contentful, you need to add all your fields and data to the content model. Kindly, refer to the below snapshot of my dashboard.
+
+```
+<img src="img/d.png">
+
+```
+<img src="img/e.png">
+
+```
+<img src="img/f.png">
+
+```
+<img src="img/g.png">
+
 ```
 
 To run the development server:
@@ -45,7 +64,7 @@ npm run prod
 
 ### To deploy this project to heroku see steps below:
 
-You will need to install the [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
+You will need to create an account in Netlify
 
 ```bash
 # Heroku-cli (paste link in browser)
