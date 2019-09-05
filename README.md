@@ -4,7 +4,7 @@ It is a Resort website where user can checkout different types of rooms such as 
 
 Live link: <a href="https://my-react-resort.netlify.com/rooms" target="_blank">Click here</a>
 
-<img src="img/a.png">
+<img src="img/aa.png">
 
 ---
 
