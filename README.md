@@ -9,7 +9,7 @@ It is a Chat Application which handles multiple client request and has tested fo
 ## Features
 
 ```bash
-Client can send commands such as "ls, pwd" to the server and server send its response to the client.
+Client can send commands such as "ls, pwd" to the server and server send its response back to the client console.
 If incorrect command will be entered then Error message will be shown in the client console
 TCP SERVER Concurrent: multiple clients can be handled by this server
 Error handling when address Port/IP already in used
