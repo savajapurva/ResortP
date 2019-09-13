@@ -2,7 +2,7 @@
 
 It is a Chat Application which handles multiple client request and has tested for all possible scenarios
 
-<img src="img/snapshot.png">
+<img src="snapshot.jpg">
 
 ---
 
